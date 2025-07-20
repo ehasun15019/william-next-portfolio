@@ -5,6 +5,11 @@
 :root {
   --primary-font: "Outfit", sans-serif;
   --secondary-font: "Ovo", serif;
+  --lightHover: #fcf4ff;
+  --darkHover: #2a004a;
+  --darkTheme: #11001f;
+  --b-boxShadow: 4px 4px 0 #000;
+  --w-boxShadow: 4px 4px 0 #fff;
 }
 
 * {
@@ -22,4 +27,30 @@ nav li a {
 
 .second-font {
   font-family: var(--secondary-font);
+}
+
+/* theme change custom */
+.lightHover {
+  background-color: var(--lightHover);
+}
+
+.darkHover {
+  background-color: var(--darkHover);
+}
+
+.darkTheme {
+  background-color: var(--darkTheme);
+}
+
+/* shadow custom */
+.b-boxShadow {
+  box-shadow: var(--b-boxShadow);
+}
+
+.w-boxShadow {
+  box-shadow: var(--w-boxShadow);
+}
+
+.card:hover {
+  box-shadow: var(--w-boxShadow);
 }
