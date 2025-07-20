@@ -1,5 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap");
+
 @import "tailwindcss";
 
+:root {
+  --primary-font: "Outfit", sans-serif;
+  --secondary-font: "Ovo", serif;
+}
+
 * {
-  font-family: Outfit;
+  font-family: var(--primary-font);
+}
+
+nav li a {
+  font-family: var(--secondary-font);
+}
+
+/* custom font class */
+.first-font {
+  font-family: var(--primary-font);
+}
+
+.second-font {
+  font-family: var(--secondary-font);
 }
